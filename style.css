@@ -54,6 +54,7 @@ header ul{
     font-size: large;
     font-weight: 400;
     display: flex;
+    flex-wrap: wrap;
     border: .5px solid rgb(231, 231, 236);
 
   
