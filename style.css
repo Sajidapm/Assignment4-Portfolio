@@ -59,6 +59,9 @@ header ul{
 
   
 }
+#about p{
+    width: 50%;
+}
 #about h2{
     text-align: center;
     padding-bottom: 25px;
