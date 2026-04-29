@@ -22,24 +22,24 @@
 #about
 { 
     background-color: white;
-    padding: 15vw;
+    padding: 20px;
     font-size: x-large;
     font-weight: 400;
     display: flex;
     flex-wrap: wrap;
+    
     border: .5px solid rgb(170, 187, 243);
 
   
 }
 #about p{
 
-    width: 50%;
+    width: 60%;
+    margin-right: 10px;
 }
 #about h2{
       font-size: 2rem;
-     
-
-    padding-bottom: 25px;
+      padding-bottom: 25px;
 }
 #skill
 {
@@ -91,7 +91,7 @@
 }
 .input
 {
-    width: 20vw;
+    width: 400px;
     border: 1px solid rgb(213, 218, 218);
     padding: 5px;
     margin-bottom: 10px;
@@ -105,3 +105,14 @@
     border-radius: 10px;
     margin: 30px;
     }
+    @media(max-width:728px)
+    {
+        #about p
+        {
+         width: 100%;
+         padding: 5px;
+        margin: 5px;}
+         .input{
+            width: 80%;
+         }
+    };
