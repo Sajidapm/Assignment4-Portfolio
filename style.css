@@ -3,42 +3,14 @@
     margin: 0;
     border: 0;
 }
+.nav{
+    background: #5f99e4;
+}
 
-header{
-    background:linear-gradient(blue, white);
-    color: azure;
-    position: fixed;
-    width: 98%;
-    height: 4rem;
-    display: flex;
-    padding: 10px;
-    justify-content:space-between ;
-    align-items: center;
-    border:1px solid rgb(228, 222, 222);
-    box-shadow: rgb(240, 238, 238) 0px 5px 15px;
-    
-    }
-    
-    #logo
-    {
-     text-decoration: none;
-     color: rgb(95, 19, 19);
-    }
-header ul{
-  display: flex;  
-  gap:5vw;
-  list-style: none;
- }
- header ul li a
- {
-     text-decoration: none;
-     color: azure;
-
- }
 #home
 {
     background:white;
-    border: .5px solid rgb(231, 231, 236);
+    border: .5px solid rgb(170, 187, 243);
     padding: 7vw;
     display: flex;
     align-items: center;
@@ -51,25 +23,28 @@ header ul{
 { 
     background-color: white;
     padding: 15vw;
-    font-size: large;
+    font-size: x-large;
     font-weight: 400;
     display: flex;
     flex-wrap: wrap;
-    border: .5px solid rgb(231, 231, 236);
+    border: .5px solid rgb(170, 187, 243);
 
   
 }
 #about p{
+
     width: 50%;
 }
 #about h2{
-    text-align: center;
+      font-size: 2rem;
+     
+
     padding-bottom: 25px;
 }
 #skill
 {
     background: white;
-    border: .5px solid rgb(231, 231, 236);
+    border: .5px solid rgb(170, 187, 243);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,41 +71,15 @@ header ul{
     border-radius: 50%;
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
-#projects{
-    margin: 5px;
-    padding :100px 0px 60px 0;
-    border: .5px solid rgb(231, 231, 236);
-    
-}
-#projects h2{
-    
-    padding: 0 0 60px 30px;
-    margin:30px;
-}
-#projects ol 
+#projects
 {
-    display: flex;
-    gap: 20px;
-    
-    flex-wrap: wrap;
-        
+    margin-top: 100px;
 }
-.projectlist
-{
-    width: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: .5px solid rgb(231, 231, 236);
-    padding: 10px;
+.card:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
 
-
-}
-.projectpic
-{
-    width: 100px;
-    height: 100px;
-}
 #contact
 {
     display: flex;
@@ -138,7 +87,7 @@ header ul{
     justify-content: space-between;
     padding-left: 10vw;
     gap: 30px;
-    border: .5px solid rgb(231, 231, 236);
+    border: .5px solid rgb(170, 187, 243);
 }
 .input
 {
@@ -151,7 +100,7 @@ header ul{
 {
     width: 200px;
     padding: 10px;
-    background-color: rgb(47, 47, 238); 
+    background: #5f99e4;
     border: 1px;
     border-radius: 10px;
     margin: 30px;
