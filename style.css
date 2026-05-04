@@ -67,10 +67,15 @@
 
 #about img
 {
-    border: 5px solid rgb(107, 160, 221);
+    border: 2px solid rgb(170, 187, 243);
+    box-shadow: 0 0 40px rgb(170, 187, 243);;
     border-radius: 50%;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
+#about img:hover{
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
 #projects
 {
     margin-top: 100px;
