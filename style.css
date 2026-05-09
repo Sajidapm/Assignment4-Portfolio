@@ -22,19 +22,18 @@
 #about
 { 
     background-color: white;
+    margin: 10rem;
     padding: 20px;
     font-size: x-large;
     font-weight: 400;
-    display: flex;
-    flex-wrap: wrap;
     
-    border: .5px solid rgb(170, 187, 243);
+    
 
   
 }
 #about p{
-
-    width: 60%;
+   align-content: center;
+    width: 100%;
     margin-right: 10px;
 }
 #about h2{
@@ -110,14 +109,11 @@
     border-radius: 10px;
     margin: 30px;
     }
-    @media(max-width:728px)
+    @media(max-width:1024px)
     {
-        #about p
-        {
-         width: 100%;
-         padding: 5px;
-        margin: 5px;}
-         .input{
-            width: 80%;
+         .tab-none
+         {
+            display: none;
          }
-    };
+ };
+    
