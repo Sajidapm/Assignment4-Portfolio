@@ -5,42 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Sajida</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
  </head>
  <body>
-   <nav class="navbar navbar-expand-lg  nav sticky-top  ">
-  <div class="container-fluid ">
-  <div>
-    <a class="navbar-brand" href="#">Sajida</a></div>
-    <div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skill">Skill</a>
-        </li>
-                <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-
-      </ul>
-        
-    </div>
-  </div>
-</nav>
-    <main>
+ <header>
+        <a href="#home" id="logo"><h1>Sajida</h1></a>
+    <!--Navigte my link-->
+     <nav>
+        <ul class="largescreen">
+            <li class="list-items"><a href="#home">Home</a></li>
+            <li class="list-items"><a href="#about">About Me</a></li>
+            <li class="list-items"><a href="#skill">Skill</a></li>
+            <li class="list-items"><a href="#projects">Projects</a></li>
+            <li class="list-items"><a href="#contact">Contact Me</a></li>       
+        </ul>
+        <div class="dropdown">
+        <button >☰</button>
+        <div class="menu-items">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skill">Skill</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+        </div>
+     </nav>
+   </header>
+       <main>
         <!--Home section-->
         <section id="home">
            <h1> I'm Sajida</h1>   
@@ -51,16 +41,16 @@
         <!--about Section-->
  
         <section id="about">
-            <h2 class="text-center">About Me</h2>
-            <div class="tab-none ">
-           <div class="d-flex"> 
+            <h2 class="about-heading">About Me</h2>
+            <div class="large-screen ">
+           
             
            <p>Hello, I am Sajida, a passionate web developer with experience in HTML5, CSS3, and JavaScript.             I enjoy creating responsive and user-friendly websites.</p>
            
            <img src="image/WhatsApp Image 2026-03-31 at 11.47.26 AM.jpeg" alt="Profile Picture" width="300" height="300">
            </div>
-            </div>
-           <div  class=" d-lg-none">
+            
+           <div  class=" mobile">
            <img src="image/WhatsApp Image 2026-03-31 at 11.47.26 AM.jpeg" alt="Profile Picture" width="300" height="300" class="text-center">
            <p class="text-center item-center">Hello, I am Sajida, a passionate web developer with experience in HTML5, CSS3, and JavaScript.             I enjoy creating responsive and user-friendly websites.</p>
 
@@ -80,46 +70,39 @@
         <br>
         <!--Project Section-->
         <section id="projects">
-                    <h2 class="text-center p-5">My projects</h2>
+                    <h2 class="">My projects</h2>
 
                 <div class="container">
-                    <div class="row">
                         <!--Project1-->
-                        <div class="col-md-6 col-lg-4 d-flex justify-space-between ">
-                        <div class="card shadow-lg m-2" style="width: 20rem;height: 100%; border:1px solid  #5f99e4; ">
-                            <img src="image/Screenshot 2026-04-03 205824.png "  class="card-img-top" style="height: 18rem;" alt="Calculator">
-                            <div class="card-body">
-                            <h5 class="card-title">calculator</h5>
+                        <div class="project ">
+                            <img src="image/Screenshot 2026-04-03 205824.png "  class="" style="height: 18rem;" alt="Calculator">
+                            <div class="">
+                            <h4 class="card-title">calculator</h4>
                             <p class="card-text">A calculator in HTML is a simple web application that performs basic arithmetic operations likce addition, subtraction, multiplication,  division , squar and cubes.</p>
                             <a href="https://calculator-five-phi-98.vercel.app/" class="btn btn-primary">View my Project</a>
                             </div>
                        </div>
-                       </div>
                        <!--Project2-->
-                            <div class="col-md-6 col-lg-4">
-                            <div class="card shadow-lg m-2" style="width: 20rem; height: 100%; border:1px solid  #5f99e4;">
-                            <img src="image/Screenshot 2026-04-03 184614.png "  class="card-img-top" style="height: 18rem;" alt="Airbnb Site">
-                            <div class="card-body">
-                            <h5 class="card-title">calculator</h5>
-                            <p class="card-text">A sample Airbnb website is a front-end project that replicates the design and layout of the Airbnb platform. It showcases property listings, images, and booking-style UI using HTML, CSS, and JavaScript.</p>
-                            <a href="https://codding-challenge-sajida.vercel.app/" class="btn btn-primary">View my Project</a>
+                            <div class="project">
+                               <img src="image/Screenshot 2026-04-03 184614.png "  class="card-img-top" style="height: 18rem;" alt="Airbnb Site">
+                               <div class="card-body">
+                               <h4>Airbnb Model Site</h4>
+                               <p>A sample Airbnb website is a front-end project that replicates the design and layout of the Airbnb platform. It showcases property listings, images, and booking-style UI using HTML, CSS, and JavaScript.</p>
+                               <a href="https://codding-challenge-sajida.vercel.app/" class="btn btn-primary">View my Project</a>
+                               </div>
                             </div>
-                            </div>
-                            </div>
+                            
                             <!--Projuct3-->
-                            <div class="col-md-6 col-lg-4">
-                            <div class="card shadow-lg m-2 " style="width: 20rem;  height: 100%; border:1px solid  #5f99e4;  ">
-                            <img src="image/Screenshot 2026-04-03 211209.png "  class="card-img-top " style="height: 18rem;" alt="To dolist">
-                            <div class="card-body"> 
-                            <h5 class="card-title">calculator</h5>
-                            <p class="card-text">A Todo List is a simple web application that allows users to add, manage, and delete tasks. It is built using HTML, CSS, and JavaScript to help organize daily activities efficiently.</p>
-                            <a href="https://to-do-list-zeta-seven-25.vercel.app/" class="btn btn-primary">View my Project</a>                      </div> 
-                            </div>
-                            </div>
-
-                        
+                            <div class="project">
+                               <img src="image/Screenshot 2026-04-03 211209.png "   style="height: 18rem;" alt="To dolist">
+                               <div>
+                               <h4>ToDo List</h4>
+                               <p>A Todo List is a simple web application that allows users to add, manage, and delete tasks. It is built using HTML, CSS, and JavaScript to help organize daily activities efficiently.</p>
+                               <a href="https://to-do-list-zeta-seven-25.vercel.app/" class="btn btn-primary">View my Project</a>
+                               </div>
+                            </div>                        
                     </div>
-                </div>
+                
 
         </section>
         <br>

@@ -3,15 +3,56 @@
     margin: 0;
     border: 0;
 }
-.nav{
-    background: #5f99e4;
-}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #94bcf0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 
+}
+nav{
+    margin-right: 30px;
+}
+#logo
+{
+ text-decoration: none;   
+ color: black;
+}
+.largescreen{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+    
+}
+.list-items a
+{
+    text-decoration: none;
+    gap: 20px;
+}
+.dropdown a{
+display: flex;
+border: 1px solid rgb(236, 232, 232);
+flex-direction: column;
+text-decoration: none;
+}
+.dropdown .menu-items{
+    display: none;
+    width: 100px;
+    border: 1px solid rgb(216, 215, 215);
+}
+.dropdown:hover .menu-items
+{display: flex;
+flex-direction: column;}
 #home
 {
     background:white;
     border: .5px solid rgb(170, 187, 243);
-    padding: 7vw;
+    padding: 100px 0px 40px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,23 +63,25 @@
 #about
 { 
     background-color: white;
-    margin: 10rem;
+    margin: 10%;
     padding: 20px;
     font-size: x-large;
     font-weight: 400;
-    
-    
-
-  
 }
+
 #about p{
    align-content: center;
     width: 100%;
     margin-right: 10px;
 }
 #about h2{
+      text-align: center;
       font-size: 2rem;
       padding-bottom: 25px;
+}
+.large-screen
+{
+    display: flex;
 }
 #skill
 {
@@ -61,7 +104,7 @@
 .separator
 {
     border-right: 1px solid gray;
-    padding-right: 20px;
+    padding-right: 10%;
 }
 
 #about img
@@ -77,9 +120,25 @@
 
 #projects
 {
-    margin-top: 100px;
+    margin: 100px;
 }
-.card:hover{
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+.project p{
+    width: 200px;
+}
+.project a{
+    text-decoration: none;
+     background: #5f99e4;
+     color: white;
+     border-radius: 10px;
+     padding:2px 20px 2px 20px;
+}
+.project:hover{
     transform: scale(1.05);
     transition: transform 0.5s;
 }
@@ -111,9 +170,37 @@
     }
     @media(max-width:1024px)
     {
-         .tab-none
+         .largescreen
          {
             display: none;
          }
- };
+         }
+ @media(min-width:1024px)
+ {
+    .dropdown {
+        display: none;
+    }
+ }
+   @media(max-width:678px)
+    {
+         .large-screen
+         {
+            display: none;
+         }
+         }  @media(min-width:679px)
+    {
+         .mobile
+         {
+            display: none;
+         }
+         }
+ @
+
+ @
+/* @media(max-width:678px)
+ {
+      .largescreen
+      {
+        display: none;
+      }*/
     
